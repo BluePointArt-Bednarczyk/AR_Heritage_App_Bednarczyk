@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AR HERITAGE APP</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="info">
+      <a href="https://bluepointart.uk" target="_blank" rel="noopener"
+        >Blue Point Art Gallery Project</a
+      >
+      AR Heritage App<br />(Chrome Android 81+)
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.163.0/build/three.module.js",
+          "three/addons/": "../jsm/",
+          "three/loaders/": "../jsm/loaders/",
+          "three/draco": "../jsm/libs/draco"
+        }
+      }
+    </script>
+    <script type="module" src="./app-webSocketClient.js"></script>
+
+    <!--    <script type="module" src="./app.js"></script>  -->
+  </body>
+</html>
